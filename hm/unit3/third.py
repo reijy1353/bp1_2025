@@ -26,5 +26,5 @@ h = float(input("h = "))
 # Get the surface of the trapezoid
 surface = ((b1 + b2) * h) / 2
 
-# Print the results
-print(f"And the surface of that trapezoid is {surface}")
+# Print the results (with just 2 digits after the dot e.g. -> .50)
+print(f"And the surface of that trapezoid is {surface:.2f}")
