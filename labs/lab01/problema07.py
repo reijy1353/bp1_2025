@@ -4,9 +4,6 @@ dobânda de P% pe an, pe un termen de 3 luni. Să se afișeze dobânda obținut�
 după 3 luni. Valorile S și P sunt numere naturale citite de la tastatură.
 """
 
-from multiprocessing import Value
-
-
 def banii_alexandrei():
 
     # Get the data
@@ -14,8 +11,8 @@ def banii_alexandrei():
     p = int(input("What's the interest? (%): "))
 
     # Make sure s and p are natural
-    if not (s >= 0 and (p >= 0 and p <= 100)):
-        raise ValueError("s or p should be natural number (and p smaller than 100).")
+    if not (s > 0 and (p > 0 and p <= 100)):
+        raise ValueError("s and p should be a natural number greater than 0 (and p smaller than 100).")
 
     # Doing some calculus
     s = s * (p / 100) * (3 / 12)
