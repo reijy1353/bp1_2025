@@ -22,6 +22,13 @@ def transformarea_numarului():
     print(f"b) {digit_one}{digit_three}{digit_two}{digit_four}")
     print(f"c) {digit_one}00{digit_four}")
 
+    # # Another example (using decimal positions)
+    # n_one = digit_four * 1000 + digit_two * 100 + digit_three * 10 + digit_one
+    # n_two = digit_one * 1000 + digit_three * 100 + digit_two * 10 + digit_four
+    # n_three = digit_one * 100 + digit_two * 10 + digit_three * 100 + digit_four
+    # print(f"a) {n_one}")
+    # print(f"b) {n_two}")
+    # print(f"c) {n_three}")
 
 if __name__ == "__main__":
     transformarea_numarului()
