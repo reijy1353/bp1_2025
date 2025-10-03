@@ -22,7 +22,7 @@ def transformarea_numarului():
     print(f"b) {digit_one}{digit_three}{digit_two}{digit_four}")
     print(f"c) {digit_one}00{digit_four}")
 
-    # # Another example (using decimal positions)
+    # # Another example (using decimal positions/decimal manipulation)
     # n_one = digit_four * 1000 + digit_two * 100 + digit_three * 10 + digit_one
     # n_two = digit_one * 1000 + digit_three * 100 + digit_two * 10 + digit_four
     # n_three = digit_one * 100 + digit_two * 10 + digit_three * 100 + digit_four
