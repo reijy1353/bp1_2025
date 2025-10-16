@@ -10,14 +10,13 @@ def calcluate_arithmethic_geometric_mean(a, b, response):
     if response == 1:
         print(f"The aritmetic mean is {(a+b)/2:.2f}")
     elif response == 2:
-        print(f"The geometric mean is {(a*b)**(1/2):.2f}")
-
         if not (a >= 0 and b>=0):
             print("Both a and b should be positive numbers.")
+        else: print(f"The geometric mean is {(a*b)**(1/2):.2f}")
 
 def main():
-    a = int(input("a = "))
-    b = int(input("b = "))
+    a = float(input("a = "))
+    b = float(input("b = "))
 
     response = int(input("Type '1' for arithmetic mean and '2' for geometric mean: "))
     

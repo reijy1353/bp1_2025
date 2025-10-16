@@ -35,7 +35,7 @@ def x_on_the_loose(x, y):
 
 def main():
     x = int(input("x = "))
-    if x < 100 and x > 999:
+    if x < 100 or x > 999:
         print("x isn't a number made of 3 digits")
         return
     y = int(input("y = "))
