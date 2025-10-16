@@ -12,10 +12,18 @@ def main():
         print("Enter a number from 1 to 31 next time (it's a month after all)")
         return
 
-    if 1 <= zi <= 10: print("Decada I")
-    elif 11 <= zi <= 20: print("Decada II")
-    elif 21 <= zi <= 30: print("Decada III")
-    else: print("Decada IV")
+    # ? Using IF
+    # if 1 <= zi <= 10: print("Decada I")
+    # elif 11 <= zi <= 20: print("Decada II")
+    # elif 21 <= zi <= 30: print("Decada III")
+    # else: print("Decada IV")
+
+    # ? Using match-case
+    match zi:
+        case _ if 1 <= zi <= 10: print("Decada I")
+        case _ if 11 <= zi <= 20: print("Decada II")
+        case _ if 21 <= zi <= 30: print("Decada III")
+        case _: print("Decada IV")
 
 if __name__ == "__main__":
     main()

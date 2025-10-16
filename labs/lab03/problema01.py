@@ -20,10 +20,18 @@ def main():
 
     ch = character[0]
 
-    if ch in knows_characters["letter"]: print('It is a letter')
-    elif ch in knows_characters["number"]: print("It is a number")
-    elif ch in knows_characters["symbol"]: print("It is a symbol")
-    else: print("Caracter necunoscut")
+    # ? Using if
+    # if ch in knows_characters["letter"]: print('It is a letter')
+    # elif ch in knows_characters["number"]: print("It is a number")
+    # elif ch in knows_characters["symbol"]: print("It is a symbol")
+    # else: print("Caracter necunoscut")
+
+    # ? Using match-case
+    match ch:
+        case _ if ch in knows_characters["letter"]: print('It is a letter') 
+        case _ if ch in knows_characters["number"]: print("It is a number") 
+        case _ if ch in knows_characters["symbol"]: print("It is a symbol")
+        case _: print("Caracter necunoscut")
     
 # Run the program
 if __name__ == "__main__":

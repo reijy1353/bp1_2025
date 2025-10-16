@@ -56,21 +56,42 @@ last_pos_dict = {
 
 # Function to transform ints in the interval 100...999 to string form (verbal form)
 def int_to_string_form(n):
+    # Gathering the data needed
     first_pos, second_pos = divmod(n, 100)
     second_pos, last_pos = divmod(second_pos, 10)
     empty_string = ""
     empty_string += first_pos_dict[first_pos] + " "
-    if second_pos == 1 and last_pos != 0:
-        empty_string += second_one_pos_dict[last_pos] + "sprezece "
-    elif second_pos == 0:
-        empty_string += last_pos_dict[last_pos]
-    else:
-        if last_pos == 0:
-            empty_string += second_two_pos_dict[second_pos] + "zece"
-        else:
-            empty_string += second_two_pos_dict[second_pos] + "zeci și " + last_pos_dict[last_pos]
+
+    # ? METHOD 1 (using ifs)
+    # if second_pos == 1 and last_pos != 0:
+    #     empty_string += second_one_pos_dict[last_pos] + "sprezece "
+    # elif second_pos == 0:
+    #     empty_string += last_pos_dict[last_pos]
+    # else:
+    #     if last_pos == 0:
+    #         empty_string += second_two_pos_dict[second_pos] + "zece"
+    #     else:
+    #         empty_string += second_two_pos_dict[second_pos] + "zeci și " + last_pos_dict[last_pos]
                 
-    print(empty_string)
+    # ? METHOD 2 (only using MATCH-CASE)
+    match second_pos:
+        case 1:
+            match last_pos:
+                case 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9:
+                    empty_string += second_one_pos_dict[last_pos] + "sprezece "
+
+        case 0:
+           empty_string += last_pos_dict[last_pos] 
+
+        case 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9:
+            match last_pos:
+                case 0:
+                    empty_string += second_two_pos_dict[second_pos] + "zece"
+                case 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9:
+                   empty_string += second_two_pos_dict[second_pos] + "zeci și " + last_pos_dict[last_pos] 
+    
+    # Print the result
+    print(f"Your numer is: {empty_string}")
 
 # Main function, where we fetch variable data from the user
 def main():
