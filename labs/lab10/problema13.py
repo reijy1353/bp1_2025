@@ -14,7 +14,8 @@ teste
 def check_vowel(s: str):
     vowel_count = 0
     for i in 'aeiou':
-        if vowel_count:= vowel_count + s.count(i) > 1: return True
+        vowel_count = vowel_count + s.count(i) 
+        if vowel_count > 1: return True
     return False
 
 def main():
@@ -26,7 +27,7 @@ def main():
     
     # Transform the string to a proper form
     forbidden_chars = "ăîțșâ"
-    trans_table = str.maketrans('', '', forbidden_chars)
+    trans_table = str.maketrans(forbidden_chars, 'aitsa')
     print(trans_table)
     s = s.lower().strip().translate(trans_table)
 
