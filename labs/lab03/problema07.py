@@ -62,7 +62,7 @@ def int_to_string_form(n):
     empty_string = ""
     empty_string += first_pos_dict[first_pos] + " "
 
-    # ? METHOD 1 (using ifs)
+    # * METHOD 1 (using ifs)
     # if second_pos == 1 and last_pos != 0:
     #     empty_string += second_one_pos_dict[last_pos] + "sprezece "
     # elif second_pos == 0:
@@ -73,7 +73,7 @@ def int_to_string_form(n):
     #     else:
     #         empty_string += second_two_pos_dict[second_pos] + "zeci și " + last_pos_dict[last_pos]
                 
-    # ? METHOD 2 (only using MATCH-CASE)
+    # * METHOD 2 (only using MATCH-CASE)
     match second_pos:
         case 1:
             match last_pos:

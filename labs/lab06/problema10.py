@@ -14,16 +14,13 @@ def is_composite(n: int) -> bool:
     if n < 3:
         return False
 
-    divisors = 0
-    for i in range(1, n//2+1):
+    divided = False
+    for i in range(2, n//2+1): 
         if n % i == 0:
-            divisors += 1
-        
-        if divisors > 2:
-            return True
+            divided = True
+            break
     
-    if divisors < 3:
-        return False
+    return divided
 
 def quit(is_composite: bool):
     return "Congrats! Your number is composite!" if is_composite else "You've given me a non composite number."

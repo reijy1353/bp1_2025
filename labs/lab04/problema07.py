@@ -5,12 +5,12 @@ determină și afișează:
     - media aritmetică а celor negative.
 """
 
-def number_play(n):
+def number_play(number: int):
     sum_pos = 0
     n_pos = 0
     arithmetic_mean = 0
     n_neg = 0
-    for i in range(n):
+    for i in range(number):
         n = int(input(f"Enter the {i+1} number: "))
         if n >= 0:
             n_pos += 1

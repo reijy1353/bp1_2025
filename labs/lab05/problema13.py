@@ -9,13 +9,12 @@ def check_if_broken(n):
     return n == 0
 
 def main():
-    sum_digits = 0
-    while True:
-        # Gettign the data from the user [and breaking the loop if one's zero ("0")]
-        n1 = int(input("\nEnter the first number: "))
-        if check_if_broken(n1): break
-        n2 = int(input("Enter the second number: "))
-        if check_if_broken(n2): break
+    n1 = int(input("\nEnter the first number: "))
+    n2 = int(input("Enter the second number: "))
+
+    while not check_if_broken(n1) and not check_if_broken(n2):
+        # Make sure..
+        sum_digits = 0
 
         # Getting the digits from the first number
         n1_temp = n1
@@ -28,6 +27,10 @@ def main():
             # Printing out the results
             print(f"\nn2 ({n2}) is equal to n1 ({n1}) % its digits' sum ({sum_digits}).")
         else: print(f"\nThey weren't equal, continuing... (n1 % its digits' sum = {n1 % sum_digits}, but n2 = {n2})")
+
+        # Gettign the data from the user [and breaking the loop if one's zero ("0")]
+        n1 = int(input("\nEnter the first number: "))
+        n2 = int(input("Enter the second number: "))
 
 if __name__ == "__main__":
     main()

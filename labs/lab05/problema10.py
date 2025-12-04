@@ -5,9 +5,8 @@ ordin inferior și superior a unui număr introdus de la tastatură.
 
 def main(n: int):
     inferior = n % 10
-    while True:
-        if n >= 10: n //= 10
-        else: break
+    while n >= 10:
+        n //= 10
         
     print(f"Superior: {n}, Inferior: {inferior}.")
     

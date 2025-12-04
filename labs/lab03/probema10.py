@@ -6,7 +6,7 @@ satisfăcătoare; 7, 8 - bună; 9, 10 - exemplară).
 
 def main():
     # Get nota var and check if it's in [1, 10] interval
-    nota = int(input("Type your grade, little boy: "))
+    nota = int(input("Type your grade: "))
     if not 0 < nota <= 10:
         print("Your grade should be in this interval [1, 10]")
 
