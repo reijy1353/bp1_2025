@@ -1,0 +1,10 @@
+Romania|Bucharest|Europe|238397|19286123
+France|Paris|Europe|643801|67750000
+Germany|Berlin|Europe|357022|83190556
+Russia|Moscow|Europe|17098242|146171015
+Canada|Ottawa|North America|9984670|38246108
+Brazil|Brasília|South America|8514877|215313498
+Australia|Canberra|Oceania|7692024|25687041
+China|Beijing|Asia|9596961|1412600000
+India|New Delhi|Asia|3287263|1380004385
+Egypt|Cairo|Africa|1001449|109262178

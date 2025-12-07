@@ -1,0 +1,25 @@
+============================================================
+RESULTS
+============================================================
+
+1. Search by capital:
+   Searched capital: Canberra
+   Country: Australia
+   Continent: Oceania
+
+2. Countries with the largest area:
+   Maximum area: 17,098,242.00 km²
+   Countries:
+   - Russia (Moscow, Europe)
+
+3. Countries sorted by population (descending):
+   1. China - 1,412,600,000 inhabitants (Beijing, Asia, 9,596,961.00 km²)
+   2. India - 1,380,004,385 inhabitants (New Delhi, Asia, 3,287,263.00 km²)
+   3. Brazil - 215,313,498 inhabitants (Brasília, South America, 8,514,877.00 km²)
+   4. Russia - 146,171,015 inhabitants (Moscow, Europe, 17,098,242.00 km²)
+   5. Egypt - 109,262,178 inhabitants (Cairo, Africa, 1,001,449.00 km²)
+   6. Germany - 83,190,556 inhabitants (Berlin, Europe, 357,022.00 km²)
+   7. France - 67,750,000 inhabitants (Paris, Europe, 643,801.00 km²)
+   8. Canada - 38,246,108 inhabitants (Ottawa, North America, 9,984,670.00 km²)
+   9. Australia - 25,687,041 inhabitants (Canberra, Oceania, 7,692,024.00 km²)
+   10. Romania - 19,286,123 inhabitants (Bucharest, Europe, 238,397.00 km²)
